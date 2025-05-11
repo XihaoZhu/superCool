@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 
 
 import {SpinName} from "@/modules/SpinName";
@@ -53,7 +53,6 @@ export default function Home() {
         <div className="w-full h-full flex items-center justify-center absolute">
             <SpinName/> 
             <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center overflow">
-              {/* <Balls/> */}
             </div>
         </div>
       </div>
