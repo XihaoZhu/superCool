@@ -1,11 +1,9 @@
 'use client'
 
 import * as THREE from "three";
-import { GLTFLoader, GLTF } from 'three/addons/loaders/GLTFLoader.js';
-import { useEffect, useRef, useState } from "react";
-import { div, g } from "framer-motion/client";
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { mod } from "three/tsl";
 
 export function KeyWords() {
   const containerRef = useRef<HTMLDivElement>(null);

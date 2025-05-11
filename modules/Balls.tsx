@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useMemo, useRef } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 export function Balls() {

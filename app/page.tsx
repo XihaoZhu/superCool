@@ -1,17 +1,12 @@
 'use client';
 
 import { useState, useRef, useEffect } from "react";
-import Image from "next/image";
 
 
 import {SpinName} from "@/modules/SpinName";
-import {Horizen} from "@/modules/Horizen";
 import {LoadingAni} from "@/modules/loadingAni";
-import {CursorEffect} from "@/modules/CrusorEffect";
-import {TextSection} from "@/modules/TextSection";
 import { MoreThan } from "@/modules/MoreThan";
 import { KeyWords } from "@/modules/KeyWords";
-import { Balls } from "@/modules/Balls";
 
 
 
@@ -24,8 +19,6 @@ export default function Home() {
     }
   }, []);
 
-  const [isBlocked, setIsBlocked] = useState(true);
-
   useEffect(() => {
     // 禁止滚动
     document.body.style.overflow = 'hidden';
@@ -33,7 +26,6 @@ export default function Home() {
     const timer = setTimeout(() => {
       // 恢复滚动
       document.body.style.overflow = '';
-      setIsBlocked(false);
     }, 4000);
 
     return () => clearTimeout(timer);
@@ -45,7 +37,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       videoRef.current?.style.setProperty('display', 'none');
-    }, 7000); 
+    }, 6000); 
 
     return () => clearTimeout(timer);
   }, []); 
@@ -56,8 +48,6 @@ export default function Home() {
         <LoadingAni/>
       </div>
     <div className="w-screen flex min-h-screen items-center justify-center flex-col relative bg-white">
-      {/* <CursorEffect/> */}
-      {/* loading animation */}
       {/* spin name */}
       <div className="w-full relative h-[30vh] mt-[20vh] overflow">
         <div className="w-full h-full flex items-center justify-center absolute">

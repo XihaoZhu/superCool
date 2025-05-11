@@ -4,8 +4,6 @@ import { useEffect, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { useState } from "react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { g } from "framer-motion/client";
 
 
 export function SpinName() {
